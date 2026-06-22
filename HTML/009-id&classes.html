@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID and Classes in HTML</title>
+
+    <style>
+        #seconddiv{
+            color: thistle;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .bg-yellow{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="firstdiv" class="red bg-yellow">This is the first div</div>
+    <div id="seconddiv" class="red">This is the second div</div>
+
+    <p>Notes: 
+        <ol>
+            <li>id is a unique attribute given to an element</li>
+            <li>class is an attribute used to target a group of elements</li>
+            <li>multiple elements can have the same class and an clement can have multiple classes</li>
+            <li>if en element has multiple classes, then they're separated by a space</li>
+            <li>but neither multiple elements have the same id, nor an element can have multiple ids</li>
+            <li>CSS for class is targeted by ".", and for id, it's "#"</li>
+            <li>CSS for id overwrites that of the class, even if css of class is written after that of id</li>
+            <li>--</li>
+            <li>moreover, id can be used to create links, just add #id_name after the link, and it'll pre-scroll to that id element</li>
+        </ol>
+    </p>
+
+</body>
+</html>

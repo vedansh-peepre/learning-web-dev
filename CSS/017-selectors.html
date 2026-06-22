@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seclectors in CSS</title>
+
+    <style>
+        /* element selector */
+        div {
+            background-color: red;
+        }
+
+        /* class selector */
+        .another {
+            background-color: yellow;
+            /*yes, it overwrites the element selector*/
+        }
+
+        /* id selector  */
+        #yet_another {
+            color: violet;
+        }
+
+        /* child selector  */
+        div>p {
+            color: lightskyblue;
+        }
+
+        /* descendent selector  */
+        div p {
+            color: greenyellow;
+            /*it overwrites that of the child selector only because it is written after it*/
+        }
+
+        /* universal selector  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector  */
+        a:link{
+            color: brown;
+        }
+        a:visited{
+            color: mediumorchid;
+        }
+        a:hover{
+            background-color: mediumseagreen;
+        }
+
+        p:first-child {
+                    text-decoration-line: underline;
+                }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div>
+        I am a div
+        <article>
+            <p>hey i am a para inside div's article</p>
+        </article>
+        <p>hey i am a para directly inside div</p>
+    </div>
+    <div class="another">
+        I am another div
+    </div>
+
+    <p id="yet_another">
+        hey, i am a paragraph
+    </p>
+
+    <main>
+        <p>I am the first child</p>
+        <p>I am the second child</p>
+    </main>
+<br>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.random.com">Go to Random website</a>
+
+</body>
+
+</html>

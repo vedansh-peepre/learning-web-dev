@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio, Video and Media in HTML</title>
+</head>
+<body>
+    
+    <video src="010-video.mp4" height="555" controls muted poster="toji-image.png"></video>
+
+    <audio src="010-audio.mp3" controls preload="metadata"></audio>
+
+    <!-- adding inline svg -->
+    <svg height="'100" width="100">
+        <circle cx="50" cy="50" r="40" fill="yellow" stroke="blue" stroke-width="2"/>
+    </svg>
+
+    <!-- adding svg with img tag -->
+    <img src="010-img.svg" alt="THIS IS AN SVG">
+    
+    <!-- using iframe -->
+    <iframe src="https://codewithharry.com" frameborder="5" height="500" width="600"></iframe>
+
+    <!-- youtube embed for iframe -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=9CrFTITjZLQ1GqY8&amp;start=828"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>

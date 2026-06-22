@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts, text props & color in CSS</title>
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+        * {
+            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            font-family: "Instrument Serif", serif;
+        }
+
+        h1{
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h2{
+            text-decoration: underline;
+            text-decoration-color: mediumslateblue;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 5px;
+
+            text-align: center;
+            /* text-transform: capitalize; */
+            text-transform: uppercase;
+
+        }
+
+        p_col {
+            text-decoration: overline;
+            font-size: 20px;
+            color:mediumslateblue;
+        }
+
+        .lorem{
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: 4px;
+        }
+
+        .lorem1{
+            font-size: 20px;
+            line-height: 1.0;
+            letter-spacing: 0.9;
+        }
+        .lorem2{
+            border: 2px solid red;
+            width: 50px;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            word-break:keep-all;
+        }
+
+        .color{
+            /* color: thistle; */
+            /* color: #f558f7; */
+            /* background-color: rgb(140, 105, 10); */
+            /* background-color: rgba(140, 105, 10, 0.5); */
+            background-color: hsl(215, 50%, 75%);
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- FONTS -->
+    <h1>Fonts</h1>
+    <h2>about Fonts</h2>
+    <p class="p_col">Hey this is some text written in some font</p>
+    <ol>
+        <caption>main topics covered</caption>
+        <li>fontface key in css</li>
+        <li>fallback fonts</li>
+        <li>google fonts</li>
+        <li>font-style</li>
+        <li>text-decoration</li>
+    </ol>
+
+    <p class="lorem">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam at voluptas dolorum ea aspernatur perspiciatis voluptatem minus exercitationem distinctio labore, tempore aperiam alias fugiat velit molestiae voluptatibus quaerat ratione eum? Veritatis voluptatum recusandae laudantium assumenda cumque unde rerum maiores laborum provident facilis fuga, ex iure.
+    </p>
+    <p class="lorem1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam at voluptas dolorum ea aspernatur perspiciatis voluptatem minus exercitationem distinctio labore, tempore aperiam alias fugiat velit molestiae voluptatibus quaerat ratione eum? Veritatis voluptatum recusandae laudantium assumenda cumque unde rerum maiores laborum provident facilis fuga, ex iure.
+    </p>
+    <p class="lorem2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam at voluptas dolorum ea aspernatur
+    </p>
+    <p>==============================================================================================================================================================================</p>
+
+    <!-- COLORS -->
+    <p class="color">there're many ways to represent colors<ol>
+        <li>color keyword</li>
+        <li>hex code</li>
+        <li>rgb value</li>
+        <li>rgba value</li>
+        <li>hsl value</li>
+    </ol></p>
+
+</body>
+</html>

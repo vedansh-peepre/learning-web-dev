@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tag</title>
+</head>
+<body>
+    
+    <h2>Fill this form</h2>
+
+    <div>
+        <p>GET method is used when we've to perform light task like just tapping the server etc.</p>
+        <p>POST method is used when we've to transfer data to the server</p>    
+    </div>
+    
+    <form action="post">
+        <div>
+            <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required placeholder="Enter your username">
+        </div>
+        
+        <div>
+            <label for="pass">Password:</label>
+        <input type="password" name="pwd" id="pass" placeholder="Enter your password" required>
+        </div>
+        
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" value="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="check" id="check" value="yes">
+            <label for="check">I've read all the terms and conditions</label>
+        </div>
+
+        <div>
+            <label for="comment">Give A Comment </label> <br>
+            <textarea name="comment" id="comment" cols="50" rows="5" placeholder="Enter your comment"></textarea>
+        </div>
+        
+        <div>
+            <select name="fav" id="fav">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+
+    <br> 
+
+    <div>
+        further notes:
+        <ol>
+            <li>"for" attribute of label is linked via the "id" of any input</li>
+            <li>when using radio inputs, we can choose to only click one button at a time by assigning same name to the two tags. in this case, it's name="gender"</li>
+            <li>it is an ill practice to use <b>br</b> tags, <b>div</b> tags are preferred</li>
+        </ol>
+        
+    </div>
+</body>
+</html>

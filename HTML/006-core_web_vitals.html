@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- this is the meta description -->
+    <meta name="description"
+        content="This is a page which tells the things of core web vilals. SE (search engine) uses this meta description to rank the site">
+
+    <!-- search engine uses this as a factor to rank the website -->
+    <title>CoreWebVitals - This is the page title</title>
+</head>
+
+<body>
+
+    <h1>CoreWebVitals and use of Lighthouse</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quia? Aliquam cupiditate tempore sunt
+        alias delectus ipsam ut nihil dolore nam in totam, consequatur facilis sit magnam. Excepturi maxime ad quos
+        quisquam recusandae possimus similique, voluptas a suscipit id esse praesentium, quibusdam laboriosam culpa
+        quae.</p>
+
+    <dl>
+        <caption>some metrics that are used to assess and give score of a website</caption>
+
+        <dt><b>Cumulative layout shift (CLS)</b></dt>
+        <dd>this is a value of how much the components of the website shifts while loading. <br>
+            the main goal here is to prevent acciedental / unintended clicks due to the shift
+        </dd>
+
+        <dt><b>Largest contextual paint (LCP)</b></dt>
+        <dd>
+            it is the time to render / load the largest image or text block visible in the viewport. <br>
+            the lesser, the better <br>
+            good(less than 2.5s), average(less than 5s), poor(>5s)
+        </dd>
+
+        <dt><b>First input delay (FID)</b></dt>
+        <dd>It is the time taken before the processing starts after a click. <br>
+            the lesser the better, and for seo, it should be under 100ms <br>
+            good(less than 100ms)</dd>
+    </dl>
+
+    <p><b>lighthouse</b> is a tool that's used to generate a report of a website based on metrics listed above and
+        beyond (more metrics) <br>
+        it can be accessed through the dev tools of browser</p>
+
+</body>
+
+</html>
