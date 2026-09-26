@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling in CSS</title>
+    <style>
+        * {
+            font-size: 18px;
+        }
+
+        nav ul li {
+            /* list-style: devanagari; */
+            list-style-position: inside;
+            list-style-type: "💸";
+            /* list-style-image: url(https://i.gifer.com/5GpK.gif); */
+
+            /* shorthand property */
+            /* list-style:disc; */
+
+            border: 2px solid black;
+            background-color: lightcoral;
+
+            /* list-style: none;  */
+            /* -- mostly used for navbar */
+            padding: 10px;
+        }
+
+        nav ul{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- list-style:none/disc/circle/devanagari
+    list-style-type: "<emoji>"
+    list-style-position: inside
+    list-style-image: <any image can be placed>
+    
+    shorthand:
+    list-style: disc inside
+    or,
+    list-style: inside url(---)    -->
+
+    <!-- then,
+     display:flex
+     padding: - -->
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

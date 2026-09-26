@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property in CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            margin: 35px;
+            padding: 35px;
+            border: 3px solid saddlebrown;
+            position: relative; /* if this is set to any value except static, then it's considered as positioned */
+
+            /* exception items- */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            /* perspective: 0cm; */
+        }
+
+        .box {
+            height: 250px;
+            width: 90%;
+            border: 3px solid black;
+            margin: 7px;
+        }
+
+        .box1 {
+            background-color: skyblue;
+            /* position: relative; */
+            left: 20px;
+            top: 75px;
+        }
+
+        .box2 {
+            background-color: aquamarine;
+            /* position: absolute; */
+            position: sticky;
+            top: 10px;
+            left: 20px;
+        }
+        
+        .box3 {
+            background-color: blanchedalmond;
+            /* position: fixed; */
+            bottom: 10px;
+        }
+        
+        .box4 {
+            background-color: coral;
+            /* position: sticky; */
+            top: 20px;
+        }
+
+        .notes{
+            margin: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="notes">
+        <ol>
+            <li>types of position properties- static(default), relative, absolute, fixed. sticky</li>
+            <li>relative will let us use top, left, bottom, right props wrt. the original position <em>while other elements stay wherever they are</em></li>
+            <li>absolute  will set the element to the nearest <b>positioned</b> element. here, if parent is not positioned, it'll go furhter up until it reaches the html tag</li>
+            <li>fixed is as it is, it'll fix the element on whichever place specified</li>
+            <li>sticky will attach the element to specified pos when scrolled (until element reaches -- referring to comparing box2 and box4 sticky position)</li>
+            <li>NOTE: <br> if properties <b>transform, filter, perspective</b> are used, then that parent will also be considered as a positioned element</li>
+        </ol>
+    </div>
+
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nostrum suscipit veritatis tempore illum, dolor non ipsam! Aspernatur saepe eligendi nam consequuntur repudiandae repellat velit veniam, sit architecto. Ab mollitia reprehenderit maxime laborum odio eos blanditiis explicabo quae provident iure, rem laboriosam facere minus voluptatum temporibus assumenda, facilis labore? Maxime esse adipisci cumque asperiores architecto iure veniam qui ut voluptates deserunt, molestiae, ipsam unde est ullam excepturi animi quo at. Placeat cumque quo provident dignissimos quisquam quod sapiente impedit ipsam ex eum temporibus ducimus accusantium ea dolorum ad numquam fuga, soluta id eos delectus illo est. Totam, corporis eveniet voluptas culpa iste itaque similique non eligendi enim odio ea earum quam quibusdam obcaecati eaque sequi officiis porro tempore assumenda voluptates nesciunt ad dicta, provident deserunt! Adipisci ipsum asperiores excepturi molestias enim? Amet illo, aut ut modi dignissimos numquam id dolorum beatae ad aliquid excepturi assumenda quae cum odio! Libero debitis, illum nisi non quibusdam corporis consequuntur. Voluptatibus tempora asperiores exercitationem, officia veritatis perspiciatis. Quisquam, quod tenetur! Debitis voluptatibus maxime, nihil totam autem, cupiditate distinctio quam, nam blanditiis praesentium voluptate a harum officiis excepturi? Ipsa, ex nostrum doloribus asperiores fuga id debitis maiores voluptate blanditiis perferendis eius sequi recusandae? Consequuntur nam accusamus dolorum similique architecto odio ab, dolore cum eum, sunt doloribus mollitia molestiae labore, ad corporis expedita necessitatibus? Voluptates animi nobis dolore vitae repellendus iure ad labore, ipsum similique eaque facere reprehenderit officiis praesentium ipsam vel magnam cum harum, modi eos cupiditate, sint vero voluptatibus. Nam facere temporibus ipsa eveniet culpa ut, tempora quo pariatur unde magni asperiores ea dignissimos dolore impedit ab voluptas possimus, minus, expedita voluptatum ad maiores. Accusamus expedita enim autem, harum quasi deleniti voluptas quae sed dolor consectetur facilis possimus consequatur minima vitae distinctio quidem ipsam iste recusandae! Qui aliquid repellat aut exercitationem veritatis, facilis nobis, quod quisquam non suscipit aspernatur, voluptatum iusto quas possimus placeat dolore maiores. Quibusdam aliquam esse officiis laborum veritatis expedita quod voluptate, recusandae earum qui vitae similique atque mollitia odit iusto cupiditate blanditiis eum at. Dignissimos, numquam commodi. Quas quae soluta excepturi quibusdam sed eveniet dolore, velit blanditiis dignissimos dolores, inventore fugiat adipisci nobis reiciendis ducimus et enim vitae voluptate alias incidunt corporis ipsum quam officiis id. Corrupti qui reprehenderit amet reiciendis natus nulla. Quasi vero quas delectus cumque et libero dolores, autem quisquam iure labore perspiciatis, earum architecto doloribus molestias harum. Quis id sit consequatur esse quam debitis molestiae ipsam ea, quia et quas ab unde corporis voluptatem cum optio adipisci. Error eos, hic, exercitationem illo perferendis quidem, assumenda ea ipsa voluptas mollitia voluptates nemo reprehenderit sed laboriosam? Facere rem placeat dicta nesciunt aut, dolores eveniet aperiam natus provident, vero vitae modi itaque ratione recusandae earum explicabo illum error laborum. Quod libero et minima sunt ut nesciunt nemo porro, iste, vel ducimus ea magnam ex, maiores veritatis ratione voluptatem earum magni. Vitae minus labore provident sit. Ad ut dolore modi voluptatibus, consequuntur dolorum suscipit quibusdam temporibus recusandae nam reprehenderit, minus optio animi fuga adipisci minima excepturi placeat velit vitae itaque maiores similique. Et dolor praesentium, delectus cumque doloremque illo repellendus in dolorum amet laudantium voluptatem earum voluptatum autem sequi facere quas fugiat reiciendis nihil velit omnis! Laudantium iste omnis minus voluptate ab vero enim mollitia explicabo, fugit suscipit a cupiditate maxime nostrum facere commodi quibusdam distinctio voluptas illo harum voluptates dolores soluta porro delectus perferendis. Deleniti accusantium, corporis itaque accusamus quibusdam aut reiciendis, iste amet laudantium nobis expedita omnis qui veniam assumenda? Temporibus maiores quos dignissimos doloremque autem. Inventore, consectetur! Illo ipsa hic doloribus quis ullam non placeat laudantium ex inventore voluptates voluptatem fuga a, vitae sapiente dolores quidem libero odio, quam ab accusamus voluptatibus accusantium sint deserunt? Dolores laborum quia dicta dolore esse, vero quod quae ut autem eum, optio provident maiores libero magni recusandae est ex obcaecati non perspiciatis nihil doloremque? Blanditiis nisi corporis officiis harum cumque animi minima, perferendis pariatur atque, non, quos voluptate consectetur doloremque fugiat maxime perspiciatis enim unde ut modi veniam? Reprehenderit mollitia enim assumenda adipisci consectetur sit iste repudiandae, at incidunt dolore officiis vero, facilis nam sequi! Nihil cum modi consequuntur expedita earum? Id cumque, incidunt tempore velit error reprehenderit laborum a impedit ratione ea commodi neque praesentium repudiandae eaque vel laudantium. Porro iusto cum doloremque, quo quis itaque nemo eius rem unde quia voluptates dolores possimus illum, maiores quos provident officia sequi recusandae beatae esse modi voluptatum dignissimos consectetur sunt. Ullam molestiae porro architecto quas ex, itaque commodi animi. Rerum dicta optio nobis iusto labore, ipsam id quibusdam ea accusamus architecto necessitatibus, soluta eaque nemo eos nesciunt debitis delectus laborum odit sed velit est ipsa atque. Voluptatem quisquam recusandae eius reprehenderit qui at. Facilis, laudantium eum suscipit numquam pariatur aut! Nostrum asperiores accusantium earum, molestias laudantium aspernatur quidem praesentium esse similique ipsam perspiciatis enim perferendis nemo dolorum a tempore alias harum minima quam. Quae, deserunt nam, beatae vel voluptate repellendus ab dolorem sapiente labore placeat earum tempore voluptas, veniam quam adipisci perspiciatis accusamus. Cum nostrum est odio officia totam? Non facere suscipit consequuntur doloribus ea adipisci impedit illo nemo eos. Culpa, nobis ab. Nisi culpa nostrum ullam accusantium labore, magnam at maxime, et omnis harum quidem architecto perspiciatis. Sit, culpa! Sint quisquam delectus repellat voluptates placeat architecto laudantium dolores alias ipsum porro dicta minima, vitae soluta commodi corrupti odit nesciunt numquam consequatur non laborum aut aliquam at nemo saepe! Inventore rerum necessitatibus, porro temporibus quia consectetur id itaque nihil a consequuntur atque labore aut laudantium corporis recusandae. Nisi hic qui in laborum esse provident voluptatem ab voluptatibus nostrum fugiat? Veritatis totam, officia veniam repellendus eius perspiciatis atque commodi deleniti suscipit facilis id optio modi, provident quo harum maiores quis iure, similique nesciunt consequatur laborum? Aperiam officiis asperiores nobis corrupti delectus modi amet unde quia magnam atque libero veniam veritatis autem blanditiis est doloribus, illum, nesciunt facere incidunt, id earum! Debitis odio sit sapiente vel dicta perspiciatis dolore iste nulla vero! Nesciunt maxime sequi quis temporibus dolore minus nam eum inventore accusamus quae quo molestiae officiis, sed aliquid blanditiis in tempora expedita laudantium?</p>
+
+
+
+</body>
+
+</html>

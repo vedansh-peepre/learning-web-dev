@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7 - CSS Grid</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            /* justify-content: spacebe; */
+        }
+
+        nav {
+            display: flex;
+            height: 75px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+            background-color: #f6f6f6;
+            padding: 0 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 10px;
+            text-decoration: none;
+            columns: black;
+            cursor: pointer;
+        }
+
+        nav span {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .hero {
+            display: grid;
+            margin: 10px;
+            padding: 10px;
+            gap: 15px;
+            justify-content: center;
+            grid-template-columns: 250px 250px 250px;
+            grid-template-rows: 150px 150px 150px;
+        }
+
+        .item {
+            background-color: #f6f6f6;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+            /* display: flex; */
+            /* justify-content: center; */
+            text-align: center;
+        }
+
+        .item p{
+            font-size: 12px;
+            color: gray;
+        }
+
+        .left {
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            /* margin: 5px 10px; */
+            padding: 7px;
+            font-size: 12px;
+            cursor: pointer;
+
+        }
+
+        .right {
+            background-color: dodgerblue;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            /* margin: 5px 10px; */
+            padding: 7px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .hero a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* this is throwing an error for some reason, but the code is not needed so... */
+        /* .hero a:visited{
+            color: white;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <span>
+                <!-- <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/dga0zj0-8b89a9e0-53f6-42ca-a5fc-fb40d5427124.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzgyNzdlZC01MzgwLTRkZWItYjE2Ni05OTdiZWJhNzk2MzQvZGdhMHpqMC04Yjg5YTllMC01M2Y2LTQyY2EtYTVmYy1mYjQwZDU0MjcxMjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HrSKkpX2Cx1qQ7RO0M9XV98aEjUGilXdWfT60S5ZwD4"
+                    alt="spidey emblem" class="logo" width="50px"> -->
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-logo.svg" alt="">
+                <!-- UltraSpidey -->
+            </span>
+            <span>
+                <ul>
+                    <!-- <li>Products <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="0" fill="none" width="24" height="24"/><g><path d="M7 10l5 5 5-5"/></g></svg></li> -->
+                    <li>Products
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </li>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                    <li>Support
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </li>
+                    <li>Learn
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </li>
+                    <li>Company
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </li>
+                </ul>
+            </span>
+            <span>
+                <ul>
+                    <li><button>Download</button></li>
+                    <li>English</li>
+                    <li><img src="https://www.svgrepo.com/show/532555/search.svg" alt="" width="15px"></li>
+                </ul>
+            </span>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <hero class="item">
+            <h2>English</h2>
+            <p>-</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>Deutsch</h2>
+            <p>German</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>Italiano</h2>
+            <p>Italian</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>Espanol</h2>
+            <p>Spanish</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>francois</h2>
+            <p>French</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>Portuguese</h2>
+            <p>Brazilian Portuguese</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>日本語</h2>
+            <p>Japanese</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>한국인</h2>
+            <p>Korean</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>中国人</h2>
+            <p>Chinese</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+        <hero class="item">
+            <h2>中國人</h2>
+            <p>Traditional Chinese</p>
+            <span class="left"><a href="rufus-4.14.exe">Download 32-bit</a></span>
+            <span class="right"><a href="rufus-4.14.exe"></a>Download 64-bit</a></span>
+        </hero>
+    </div>
+
+</body>
+
+</html>

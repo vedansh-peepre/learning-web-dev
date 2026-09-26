@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 solution</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        :root{
+            --color1: navajowhite;
+            --color2: lightgreen;
+            --color3: lightblue;
+            --color4: darksalmon;
+            
+            --darkcolor1: coral;
+            --darkcolor2: chartreuse ;
+            --darkcolor3: mediumslateblue;
+            --darkcolor4: salmon;
+
+        }
+
+        .nav ul{
+            list-style-type: none;
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            /* color:chartreuse ; */
+        }
+
+        .nav ul li{
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .nav ul li:nth-child(1){
+            background-color: var(--color1);
+        }
+
+        .nav ul li:nth-child(2){
+            background-color: var(--color2);
+        }
+
+        .nav ul li:nth-child(3){
+            background-color: var(--color3);
+        }
+
+        .nav ul li:nth-child(1):hover{
+            background-color: var(--darkcolor1);
+        }
+
+        .nav ul li:nth-child(2):hover{
+            background-color: var(--darkcolor2);
+        }
+
+        .nav ul li:nth-child(3):hover{
+            background-color: var(--darkcolor3);
+        }
+
+        .content p{
+            margin: 5px 15px;
+            padding: 10px;
+            background-color: var(--color4);
+        }
+        
+        .content p:hover{
+            background-color: var(--darkcolor4);
+
+        }
+
+        .easteregg{
+            height: 100px;
+            width: 100px;
+            font-size: 15px;
+            margin: 500px 50px;
+            padding: 5px;
+            background-color: white;
+            border: none;
+            /* background-color: gray; */
+        }
+        
+        .easteregg a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .easteregg:hover{
+            background-color: lightgray;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- have to make a website with a colorful navbar, that used colors from CSS variables -->
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <h1>CSS multicolor website</h1>
+
+    <div class="content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus possimus sunt debitis minus, at, nostrum voluptas neque deleniti dolores odit aliquam, voluptates quas ea. Voluptatum, necessitatibus ex sint quod ipsum id animi ipsa, iusto culpa perferendis, illum quibusdam hic incidunt odio. Odio ipsam eius, optio labore dignissimos, vero animi et molestias quos incidunt neque adipisci.</p>
+    </div>
+
+    <button class="easteregg">
+        
+        <a href="https://youtu.be/QDia3e12czc" target="_blank">congratulations! you found an easter egg, click me</a>
+    </button>
+
+</body>
+</html>

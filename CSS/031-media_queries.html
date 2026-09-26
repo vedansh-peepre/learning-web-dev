@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries in CSS</title>
+
+    <style>
+
+        body{
+            background-color: navajowhite;
+        }
+
+        @media screen and (orientation:portrait){
+            body{
+                border: 5px dashed black;
+            };
+        }
+
+        @media only screen and (max-width: 566px){
+            body{
+                background-color: aquamarine
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            background-color: mediumslateblue;
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>hey there, i am a h1</h1>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="notes">
+        <caption>Syntax for media query:-</caption>
+        <pre>
+    @media `only/not` `screen/speech/etc.` and (`expression`){
+        `CSS code`
+    }
+        </pre>
+    </div>
+
+</body>
+</html>

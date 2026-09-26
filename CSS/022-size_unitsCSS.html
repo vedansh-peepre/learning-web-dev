@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units in CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: slateblue;
+            width: 80vw;
+            margin: auto;
+        }
+        
+        .container {
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: slateblue;
+            width: 80vw;
+            margin: 20px auto; /*top-bottom, left-right*/
+            font-size: 18px;
+            min-height: 50vmin; /*i.e. it's 50vh for the laptop*/
+        }
+
+        .container p{
+            font-size: 2em; /*since the inherited size was 18px, this is now 36px*/
+            /* font-size: 2rem; and this will mean it'll be 2 times of the root's(hmtl) size, so 24px */
+        }
+
+        .container div{
+            border: 2px solid yellow;
+            box-sizing: border-box;
+
+            width: 50%;
+        }
+        dl{
+            font-size: 16px;
+            font-family: monospace;
+        }
+        dl dt{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        this is a box
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum earum explicabo qui error et voluptatibus aliquid praesentium itaque perferendis doloremque veniam dignissimos atque eaque beatae illum hic eos corrupti, ad recusandae at placeat! Expedita perferendis dolores debitis, eaque reiciendis deleniti impedit eius blanditiis dolor.</p>
+    </div>
+
+    <div class="container">
+        <div>better example of the inherited units
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur sint, fugiat doloremque minus libero facere, ab voluptates a enim qui exercitationem.</div>
+        </div>
+
+        <!-- uncomment me (lorem999)) -->
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam illo alias sunt, commodi ducimus quam minima nemo necessitatibus ipsam ut tempore voluptatibus repudiandae tempora quod ratione, maxime neque dolores. Fugiat, facere voluptatum sequi laboriosam tenetur alias consequatur. Est ratione, impedit ad a ea fugit consequatur alias tempora ab iste ullam repudiandae ducimus voluptates, officiis dolorem placeat, nisi rerum mollitia adipisci illo accusantium deserunt provident omnis? Accusamus a adipisci commodi itaque vel deleniti officia saepe earum dolorum ipsa sit molestias repellendus culpa sapiente repudiandae voluptates, iste, veritatis, ipsum beatae voluptate voluptatibus nostrum dolores esse quam! Mollitia officia necessitatibus hic porro ducimus odit dolore cupiditate, quidem, sed fuga asperiores incidunt sapiente repudiandae sequi modi eum iure ratione reprehenderit obcaecati laboriosam tempore debitis illum blanditiis? Laboriosam, ratione quos? Nostrum explicabo animi molestias suscipit vitae tenetur ducimus? Veritatis quam, eos debitis non iste quo enim ratione nisi eaque possimus accusamus. Necessitatibus animi neque libero ratione assumenda laborum ex quae iure quis? Nihil, reprehenderit, eligendi nostrum tenetur reiciendis ipsum repellat excepturi aspernatur quasi maiores possimus consequuntur quod facere aperiam enim unde in aliquam eaque similique voluptate cumque accusantium fugiat ex asperiores. Earum eius sint blanditiis dolor ratione ea nobis quos delectus accusantium! Expedita in repudiandae minus nulla harum odio neque consequuntur ut, hic itaque, nemo dignissimos? Provident, maiores atque possimus in culpa deleniti. Soluta sed autem cumque ex illum qui perspiciatis adipisci voluptate ipsam, sit dolore provident consequatur minus id! Nulla, consequatur ex saepe in ducimus illo autem vitae aliquid molestias cumque laborum harum eos tempora tenetur distinctio similique dolorem ea nostrum, ipsum sint rerum delectus? Eum laboriosam enim voluptates quae est amet accusantium voluptas numquam officiis. Minima, rem! Enim sunt repellat dolor fugiat modi earum, quibusdam at dicta, accusamus laudantium veritatis iusto. Accusamus minus temporibus accusantium iste labore. Suscipit necessitatibus porro ea sunt sed itaque hic quaerat commodi animi pariatur harum quisquam obcaecati amet labore molestias quam, deserunt vero impedit nihil sint ullam, accusantium autem? Blanditiis ratione sed vero culpa sequi iusto quasi eum officia sint labore nemo est aspernatur voluptatum, ullam magnam repudiandae omnis. Atque architecto animi explicabo deleniti natus eaque voluptate nulla quidem minus, doloribus, provident cupiditate voluptatibus error illo, quasi magni ipsum quaerat est cum in voluptas voluptatum sequi autem. Sit quo mollitia sunt voluptates, eius saepe esse vel eum, tempora quae, illo id deleniti. Enim nulla qui sapiente in ratione, cupiditate velit quidem nobis harum sed odio dolores ullam cumque. Totam mollitia molestiae dolorem dolorum accusamus eius explicabo ratione odio commodi quam, fugit sed! Veritatis quidem autem deserunt quo optio fuga perferendis labore, eum, officiis expedita deleniti eos praesentium atque! Earum vel quasi aut, quia consequatur ullam iusto deleniti dolorem ad veniam, temporibus nobis exercitationem molestiae cupiditate voluptate deserunt atque illum dolores obcaecati incidunt error, laborum sit! Totam ipsa fugiat numquam aspernatur ducimus. Dicta, nobis. Quos consequatur quae placeat pariatur harum. Ab ratione veritatis necessitatibus sit velit architecto iste animi, consequatur itaque exercitationem accusantium quidem quisquam quis. Sunt eum similique molestiae quis praesentium libero minima perspiciatis itaque voluptas blanditiis veniam accusamus, fuga nihil quibusdam pariatur, ad repellat laboriosam nisi dolore adipisci modi ullam, quaerat ex voluptatibus. Distinctio itaque sint magnam eum, dignissimos et ex, soluta incidunt molestias ullam minima mollitia. Quod iure est pariatur corporis nisi dolor at. Excepturi minima at quidem cumque illum enim quae aperiam dolore, voluptates iusto debitis consequuntur deserunt quis quas cupiditate architecto natus itaque laborum. Expedita, suscipit explicabo necessitatibus minus assumenda mollitia aperiam quibusdam iusto sint culpa velit dolor in a, consequuntur facere. Error magnam tempora perspiciatis commodi fugiat dicta corporis amet impedit, velit nam, sint pariatur. Impedit asperiores voluptatibus nulla quisquam placeat necessitatibus ullam expedita corporis rerum accusamus id itaque, earum animi optio voluptate. Dignissimos officiis, veritatis quod corporis doloremque nemo doloribus ipsam rerum facilis quibusdam unde eaque. Voluptatem, nobis minus molestiae ea architecto tenetur est veniam velit temporibus laudantium aspernatur ipsa soluta eos itaque cumque autem accusamus magnam ullam veritatis exercitationem consequuntur nam dolorum maxime ab. Cum porro fugiat ducimus corrupti alias velit eos perspiciatis, aliquam doloribus saepe architecto ex perferendis? Pariatur ullam, impedit laudantium repellendus praesentium odit iure deleniti corporis autem recusandae suscipit? Facere rem commodi corrupti ipsa autem sint est, consequatur nostrum enim nemo, nihil mollitia atque? Enim possimus hic tenetur consequatur qui suscipit dolorum exercitationem quisquam minima aperiam ex sequi ut veritatis error est fuga, eaque modi porro. Asperiores illum quibusdam, facere, animi minus magni nam temporibus neque obcaecati et dolore sit delectus quas facilis, quidem vero reiciendis voluptatibus molestiae rerum ipsa ut quis provident praesentium odio! Alias modi consequuntur dignissimos, dolore pariatur saepe repellendus quod quidem laborum eligendi laudantium dolorum reprehenderit error culpa magnam, labore fuga veritatis quibusdam debitis natus nam. Quo, magni beatae. Ab similique, doloribus laborum consectetur aliquid voluptatibus quasi voluptatum tempore distinctio mollitia optio iure sunt blanditiis atque modi asperiores incidunt iusto error ullam expedita at amet? Facilis, saepe hic! Maxime harum eligendi autem eos, animi hic delectus fugit doloremque voluptatum? Maxime ullam temporibus asperiores, quam et voluptatum ipsa commodi incidunt soluta iste saepe reiciendis excepturi, totam voluptatem! Labore sapiente, vitae vel ipsa sit expedita sunt accusamus at necessitatibus tenetur illum. Nostrum corrupti delectus iure ut repudiandae obcaecati tempore, reprehenderit quam saepe esse consectetur velit. Beatae cupiditate, iusto, necessitatibus quasi reiciendis exercitationem ratione facere minima nemo laborum doloremque vero officia repellendus id provident sint tempore nobis repudiandae soluta velit. Nesciunt omnis dolorem perspiciatis pariatur id esse laudantium quibusdam atque exercitationem veritatis quod enim, ducimus nisi doloremque, ut laborum quasi fuga a! Voluptas omnis quia repellendus asperiores amet nulla, autem ullam fuga rerum sint corrupti? Necessitatibus non sapiente, accusantium quasi fuga rerum veniam asperiores voluptates commodi minima ut ab neque voluptate sunt saepe est omnis adipisci reprehenderit animi eum. Debitis officiis quod incidunt consequatur est voluptatibus sequi ratione eligendi labore porro, numquam commodi vitae reprehenderit molestiae? Mollitia, iusto. Doloribus a vel voluptate corrupti incidunt odit sunt aperiam ex delectus quia laudantium, labore excepturi sed beatae blanditiis autem nam! Odit adipisci ipsum molestiae vitae, ratione dolores eos ducimus provident quisquam eius cupiditate expedita temporibus nulla suscipit. -->
+    </div>
+
+    <dl>
+        <dt>px</dt>
+        <dd>pixel is the most commonly known unit for computer displays. probably 1/96 of an inch</dd>
+        <dt>em</dt>
+        <dd>em is the size relative to the parent class/element of the element. eg 2 em example above [value 0 to 1]</dd>
+        <dt>rem</dt>
+        <dd>just what em is, just r is the root, which means it interits directly from root</dd>
+        <dt>vh and vw</dt>
+        <dd>viewport height and width. crucial for responsive design</dd>
+        <dt>vmin and vmax</dt>
+        <dd>just like vh and vw, but it gets defined by which viewport length is smaller or longer [e.g., in monitor, vmin is height, but in mobile phone, vmin is width]</dd>
+        <dt>percent %</dt>
+        <dd>it's sizing relative to the parent element</dd>
+        <dt>min-height and min-width</dt>
+        <dd>means minimum, and max itna hai, but it can change based on data too</dd>
+    </dl>
+
+</body>
+
+</html>

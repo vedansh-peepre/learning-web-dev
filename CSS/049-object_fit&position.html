@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and position in CSS</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .container{
+            width: 558px;
+            height: 668px;
+            background-color: palegreen;
+            border: 2px solid black;
+        }
+        
+        img{
+            width: 558px;
+            height: 668px; /* same as that of container, but container's dimension don't really matter here */
+            /* object-fit: contain; */
+            /* object-fit:scale-down; */
+            object-fit: cover;
+            /* object-position: bottom right; */
+        }
+        
+        .container2{
+            width: 558px;
+            height: 668px;
+            margin: 0 20px;
+            border: 2px solid black;
+            /* background is used to restricting someone from downloading the image (directly) */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt07TxTiawXW8NplRHr0e3VyQFKKsYpLkS45P-0ZDKgw&s");
+            /* background-repeat: no-repeat; */
+            background-position: 50% 50%;
+            /* background-clip: border-box; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="http://cdn.pixabay.com/photo/2016/11/21/06/53/beautiful-natural-image-1844362_1280.jpg" alt="">
+    </div>
+
+    <div class="container2">
+        
+    </div>
+
+</body>
+</html>

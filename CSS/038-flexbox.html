@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+
+    <style>
+        .container{
+            border: 2px solid brown;
+            margin: 5px;
+            /* padding: 5px; */
+            display: flex;
+            height: 77vh;
+            
+            /* centering */
+            /* justify-content: center; */
+            /* align-items: center; */
+
+            /* direction and wrap */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap-reverse;  */
+            /*folding reversed*/  
+            align-content: center; 
+            /* used for multiple rows of elements */
+            /* flex-flow: row wrap;  */
+            /* shorthand property that lets you choose `flex-direction` and `flex-wrap` at once */
+            
+            /* gap --- gap-row, gap-column can also be used */
+            gap: 20px;
+            /* shorthand */
+            gap: 25px 10px; 
+        }
+        
+        .items{
+            /* order: 0; --by default */
+            height:53px;
+            width:53px;
+            background-color: gold;
+            border: 2px solid black;
+            /* margin: 5px; */
+
+            flex-grow: 1;
+        }
+        .order-1{
+            order: 1;
+            /* flex-grow: 4; */
+
+            /* shrinks twice as fast */
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items order-1">4</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    
+    <div class="notes">
+        <dl>
+            <caption>Notes</caption>
+            <dt>CONTAINER-</dt>
+            <dt>1. centering and alignment</dt>
+            <dd>use flex in CONTAINER and justify-content:center[horizontal] and align-items:center[vertically] <br>
+                space-around doesnt care of margin <br>
+                space-evently spaces everythings despite of margin<br>
+                space-between is just for among the items<br>
+            </dd>
+            <dd>** and... the concept of main-axis and cross-axis, because the justify content and align items work based on flex direction and these concepts 
+            </dd>
+
+            <dt>2. flex wrap</dt>
+
+            <dt>3. flex direction</dt>
+
+            <dt>ITEMS</dt>
+            <dt>1. order</dt>
+            <dd>by default it is zero. more the order, later will it be</dd>
+
+            <dt>2. flex-grow and flex-shrink</dt>
+
+            <dt>3. align-self</dt>
+        </dl>
+    </div>
+
+</body>
+</html>
