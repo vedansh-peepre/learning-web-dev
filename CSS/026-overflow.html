@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            font-size: 23px;
+            border: 2px solid black;
+            height: 40vh;
+            width: 40vw;
+
+            /* overflow: auto; -- recommended */
+
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+
+            overflow-x: hidden;
+            overflow-y: scroll;
+            /* or just use this shorthand: */
+            /* overflow: hidden auto; */
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        This is a sample text, and pretty big of a text since i'm using lorem99 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt unde non quidem alias delectus, sapiente, facilis enim omnis iure voluptatum rerum molestiae dolores sit nostrum quaerat cumque labore nisi dolor tempora minima cupiditate et accusantium nihil. Quaerat minima libero optio voluptates exercitationem atque iste illo magni! Cupiditate illo velit debitis ab blanditiis itaque, nisi vel quisquam explicabo, vero corporis accusamus quis omnis voluptates sequi dicta fuga reprehenderit accusantium id eligendi! Excepturi itaque nam expedita fugiat, sit, tempore, modi temporibus ipsa non exercitationem cum dicta nobis hic? Harum quae nobis non accusamus saepe delectus atque voluptates quo facilis veniam.
+    </div>
+
+</body>
+</html>

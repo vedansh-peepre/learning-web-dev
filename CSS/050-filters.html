@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters in CSS</title>
+    <style>
+        body {
+            display: flex;
+            gap: 5px;
+        }
+
+        .frame img {
+            width: 490px;
+            height: 490px;
+            object-fit: contain;
+            border: 2px solid saddlebrown;
+        }
+
+        .filter1{
+            filter: blur(5px);
+        }
+
+        .filter2{
+            /* filter: brightness(199%); */
+            filter: contrast(0.5) drop-shadow(0px 15px black) hue-rotate(90deg);
+        }
+
+        .filter3{
+            /* filter: grayscale(0.5); */
+            filter: sepia();
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="frame">
+        <img class="filter1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YlpJZSVKW7cV8_pOtIP9D8O6v5ufL3pooiyPogb4Fg&s=10"
+            alt="">
+    </div>
+    <div class="frame">
+        <img class="filter2" src="https://images4.alphacoders.com/133/thumb-1920-1332281.jpeg" alt="">
+    </div>
+    <div class="frame">
+        <img class="filter3" src="https://i.pinimg.com/736x/0d/17/13/0d1713498607d81328044c67d8b34b52.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .cards{
+            margin: 5px;
+            padding: 10px;
+            border: 5px solid black;
+        }
+
+        .card{
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid mediumpurple;
+        }
+
+        .image1{
+            /* floats to the left, and allows content on the other side */
+            float: left;
+        }
+        
+        .image2{
+            /* floats to the right, and allows content on the other side */
+            float: right;
+        }
+
+        .cards :nth-child(4){
+            /* doesnt allow content on ITS any side */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lv27g2gGEQgiDWxzFnCHNfGrQ93O-999ta0V6UFMSg&s=10" alt="" width="250px" class="image1">
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, neque? Necessitatibus incidunt, et velit expedita, cupiditate itaque consequuntur libero explicabo quae laudantium sunt!</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalbUye5iBbOQNYXUuM98x99AeKrBHPEAVJvWkeyNkcw&s=10" alt="" width="350px" class="image2">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum itaque ut atque ipsa id accusantium a. Sed at eaque fugit labore. Quisquam a esse itaque velit exercitationem impedit odio odit, ut cum dolor unde illum nostrum, debitis dolorum suscipit hic est adipisci voluptates. Praesentium quas dolorem cum explicabo illo alias corrupti, deleniti voluptates ea assumenda nisi sit veniam non eum excepturi quis quisquam laboriosam quae expedita. Quae sed consectetur provident autem? Exercitationem consequatur sequi molestias, atque natus nobis consectetur temporibus provident mollitia accusamus saepe recusandae eligendi aperiam ullam pariatur dolorem maxime cumque nostrum inventore blanditiis enim cum explicabo minus eos? Adipisci distinctio reiciendis corporis repudiandae deleniti, atque sunt fugit, iure veritatis illum, molestias consequatur assumenda harum laborum quisquam tenetur maiores itaque error sed quidem? Sit, debitis ad doloribus asperiores deserunt necessitatibus porro magni vel iste beatae sint itaque quod cupiditate vitae officiis ducimus doloremque! Molestias, perferendis! Doloremque sequi natus voluptate ea libero excepturi a deserunt ex, illo neque aut. Earum aspernatur provident ad repudiandae nobis? Sapiente voluptate quibusdam placeat beatae pariatur nemo aperiam quasi, quia dicta provident veritatis odit veniam nobis, rem impedit et doloremque atque iusto totam vitae optio. Alias facere sed, perferendis architecto, nulla enim ducimus optio ab aut ullam harum quo obcaecati ea aliquid. Incidunt qui corporis doloribus at, sequi eaque quaerat soluta earum vero numquam repellat tempore non deleniti cum rerum? Ut aperiam nesciunt exercitationem ducimus nam blanditiis non corporis.</div>
+        <div class="card">Card3</div>
+    </div>
+
+    But hey! dont use this, it's only to have a knowledge about and as for modern websites, make use of CSS grid and flexbox
+
+</body>
+</html>

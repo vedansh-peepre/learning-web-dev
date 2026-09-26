@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform commands in CSS</title>
+    <style>
+        .container{
+            border: 2px solid rebeccapurple;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        .box{
+            width: 155px;
+            height: 155px;
+            text-align: center;
+            background-color: bisque;
+            border: 2px solid gold;
+        }
+
+        .box1:hover{
+            /* transform: rotate(50deg); */
+            /* transform: rotate(0.55turn); */
+            /* transform: rotateY(40deg); */
+            transform: rotate3d(1,1,1,45deg)
+            /* transition:ease ; dunno how this works */
+        }
+
+        .box2:hover{
+            transform: scale(120%);
+        }
+
+        .box3:hover{
+            /* transform: skewY(0deg); */
+            /* a shorthand for skewX and skewY */
+            transform: skew(0deg, 10deg);
+        }
+
+        .box4:hover{
+            transform: translate(10%, 60%);
+        }
+        
+        .box5:hover{
+            transform: rotate(15deg);
+            transform-origin: 80% 10%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box box1">boxxx</div>
+        <div class="box box2">boxxx</div>
+        <div class="box box3">boxxx</div>
+        <div class="box box4">boxxx</div>
+        <div class="box box5">boxxx (with changed origin)</div>
+    </div>
+
+</body>
+</html>

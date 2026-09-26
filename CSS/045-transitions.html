@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property in CSS</title>
+    <style>
+        .container{
+            background-color: saddlebrown;
+            width:799px;
+            height: 499px;
+        }
+
+        .box{
+            background-color: dodgerblue;
+            width: 100px;
+            height: 75px;
+        }
+
+        .transformation{
+            transform: translateX(55px) translateY(68px) scale(120%);
+            background-color: azure;
+
+            /* which property to target */
+            /* transition-property: all; 
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.5s; */
+
+            /* shorthand property */
+            transition: all 3s cubic-bezier(0.94, 0.57, 0, 0.91) 0.5s ;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box transformation"></div>
+    </div>
+
+</body>
+</html>

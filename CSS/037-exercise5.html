@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple website layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .nav {
+            background-color: crimson;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+            /* position: sticky; */
+        }
+
+        .nav ul li {
+            display: inline;
+            /* margin: 10px 0px; */
+            padding: 20px;
+            color: white;
+        }
+
+        .hero {
+            display: flex;
+            background-color: antiquewhite;
+            margin: 30px;
+            padding: 25px;
+            justify-content: center;
+        }
+
+        .hero img {
+            margin: 20px;
+            /* position: sticky; */
+        }
+
+        .logo{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+
+        .content {
+            background-color: mediumblue;
+            margin: 30px 200px;
+            border-radius: 20px;
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            height: 400px;
+            text-align: center;
+            /* position: relative;
+            top: 50%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            height: 400px;
+            background-color: crimson;
+            font-weight: bolder;
+            padding: 20px;
+            color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contacts</li>
+            <li>Downloads</li>
+        </ul>
+    </div>
+
+    <!-- <header>
+
+    </header> -->
+    
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/dga0zj0-8b89a9e0-53f6-42ca-a5fc-fb40d5427124.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzgyNzdlZC01MzgwLTRkZWItYjE2Ni05OTdiZWJhNzk2MzQvZGdhMHpqMC04Yjg5YTllMC01M2Y2LTQyY2EtYTVmYy1mYjQwZDU0MjcxMjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HrSKkpX2Cx1qQ7RO0M9XV98aEjUGilXdWfT60S5ZwD4" alt="spidey emblem" class="logo" width="50px">
+
+    <section>
+        <div class="hero">
+            <img src="https://pyxis.nymag.com/v1/imgs/041/b4a/052a7aa0c030d05f97433ab03aee452cfb-spiderman-brandnewday.1x.rsquare.w1400.jpg"
+                alt="peter1" width="400px">
+            <img src="https://pyxis.nymag.com/v1/imgs/ce1/98c/181d9e33e6d5b611e351491cb2886d5d3c-29-amazing-spiderman.rsquare.w400.jpg"
+                alt="peter2 maybe" width="400px">
+        </div>
+    </section>
+
+    <section>
+        <div class="content">
+            WELCOME TO SIGMA WEB DEVELOPMENT COURSE EXPRESS
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            &copy; 2026 Vedansh Peepre
+
+            <br>
+            note: the sticky nav didnt work with it being inside `header` tag
+        </div>
+    </footer>
+
+</body>
+
+</html>

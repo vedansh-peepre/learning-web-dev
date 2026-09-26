@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - nav clone of a website</title>
+    <style>
+        * {
+            font-family: Helvetica, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            /* justify-content: spacebe; */
+        }
+
+        nav {
+            display: flex;
+            height: 75px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+            background-color: aliceblue;
+            padding: 0 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 8px;
+            text-decoration: none;
+            columns: black;
+            cursor: pointer;
+        }
+
+        nav span{
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero section:first-child {
+            margin: 100px;
+        }
+
+        .hero-sec {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            width: 25vw;
+            border: 2px solid gray;
+            background-color: lightgoldenrodyellow;
+            border-radius: 13px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 5px;
+            background-color: yellow;
+            border-radius: 5px;
+            border: 2px solid gray;
+            cursor: pointer;
+        }
+
+        /* a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- website == `https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload` -->
+    <!-- exercise == to design a clone of the navbar(and some content) of the given website -->
+
+    <header>
+        <nav>
+            <span>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/078277ed-5380-4deb-b166-997beba79634/dga0zj0-8b89a9e0-53f6-42ca-a5fc-fb40d5427124.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi8wNzgyNzdlZC01MzgwLTRkZWItYjE2Ni05OTdiZWJhNzk2MzQvZGdhMHpqMC04Yjg5YTllMC01M2Y2LTQyY2EtYTVmYy1mYjQwZDU0MjcxMjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HrSKkpX2Cx1qQ7RO0M9XV98aEjUGilXdWfT60S5ZwD4" alt="spidey emblem" class="logo" width="50px">
+                UltraSpidey
+            </span>
+            <span>
+                <ul>
+                    <li>Products</li>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                    <li>Support</li>
+                    <li>Learn</li>
+                    <li>Company</li>
+                </ul>
+            </span>
+            <span>
+                <ul>
+                    <li><button>Download</button></li>
+                    <li>English</li>
+                    <li><img src="https://www.svgrepo.com/show/532555/search.svg" alt="" width="15px"></li>
+                </ul>
+            </span>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <section>
+            <h1>Download UltraEdit</h1>
+            <p>
+                Choose your operating system and download the latest version of the editor.
+                New users get a free 7-day trial after downloading UltraEdit.
+            </p>
+        </section>
+
+        <section class="hero-sec">
+            <div class="box">
+                <h1>Windows</h1>
+                <button>Download</button>
+            </div>
+            <div class="box">
+                <h1>Mac</h1>
+                <button>Download</button>
+            </div>
+            <div class="box">
+                <h1>Linux</h1>
+                <button>Download</button>
+            </div>
+        </section>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque itaque possimus vero soluta optio
+        earum in nulla nisi tenetur, nemo neque exercitationem consequuntur eligendi iure odit, quia rem corrupti maxime
+        nam natus sequi! Aspernatur aut officia delectus ratione labore blanditiis illum quidem aperiam molestiae,
+        impedit cupiditate sed sapiente, autem culpa asperiores eligendi earum necessitatibus consequuntur aliquam?
+        Recusandae, non. Sequi magnam sunt omnis nihil ipsam vero quaerat id beatae impedit aut temporibus pariatur,
+        nesciunt autem iure reprehenderit a animi quia corporis voluptatum quam quidem quos labore aspernatur eveniet.
+        Provident beatae recusandae veniam qui eligendi fugit in est earum libero ipsum dicta, autem deserunt? Quod
+        praesentium eligendi molestiae ducimus, sapiente tempore voluptatem expedita commodi similique itaque?
+        Accusantium tenetur blanditiis omnis saepe ducimus nulla recusandae debitis! Nostrum quos suscipit pariatur
+        earum, officiis, nobis asperiores quis mollitia ipsum incidunt dicta? Ullam dolorem aut ut incidunt numquam
+        mollitia adipisci nam error! Necessitatibus, voluptate blanditiis temporibus magnam soluta obcaecati fugit
+        architecto sunt dolorum? Saepe at esse doloribus alias, voluptates quaerat quia. Adipisci fugit explicabo
+        molestiae iure! Quae aperiam ut labore magnam cum, odio mollitia sint recusandae nesciunt quas veritatis
+        architecto neque libero quo est unde ipsum reiciendis, odit expedita qui molestiae veniam, placeat atque
+        eveniet. Itaque, nam quis laborum quisquam illum dolorum asperiores placeat eum facilis voluptate assumenda
+        quasi nostrum at maiores nulla autem repellat esse dolores. Totam iusto magnam deleniti! Sequi, impedit tenetur
+        molestiae repellendus fugiat vero dolores, iusto totam voluptatum harum, voluptates eligendi amet et repellat
+        quod quis ipsum a magni dicta quasi. Temporibus quia harum voluptates rem veritatis delectus tenetur minus
+        nobis, quos eligendi, doloribus iusto dolores amet quae tempora ipsum explicabo porro perspiciatis rerum fuga
+        distinctio sed. Soluta sint nobis doloribus quos, perspiciatis sequi harum ratione deleniti laboriosam accusamus
+        voluptates suscipit quidem repellat iste, assumenda autem aperiam odit omnis quas consequuntur totam sit ipsum
+        delectus earum. Adipisci in totam veniam magnam odit nesciunt quam, illum architecto ab provident facilis sint
+        dolore alias quia quidem ea deserunt. A vel nam ipsa. In quod sunt doloribus dolor. Qui eligendi totam quis
+        inventore voluptatem quo dolorum nulla praesentium mollitia laudantium ipsa perferendis numquam, earum porro
+        quaerat ipsum voluptatibus ad laborum. Repudiandae magni vero nam non error ex pariatur quis iure fugiat,
+        inventore laudantium praesentium ullam. Eius molestiae vitae explicabo dolor in molestias cum repellendus facere
+        iste labore voluptatem, iure sed dolore corrupti velit perferendis quas. Quos saepe corporis eaque sunt
+        quibusdam? Voluptate eaque natus asperiores alias et cupiditate inventore ullam, blanditiis laborum. Expedita
+        modi dicta at laudantium, error consequatur dolores culpa aliquam optio excepturi iure corrupti facilis hic
+        maiores autem ducimus quod voluptates temporibus! Nobis omnis libero corporis ea nihil saepe quidem excepturi
+        vitae, animi non ullam delectus qui id provident eveniet quo. Aut, molestias laudantium fugit animi earum
+        voluptatibus vel doloremque nulla! Ex soluta ut laboriosam saepe fuga, possimus consequuntur, modi pariatur
+        dolor error voluptatem amet! Temporibus, hic. Animi quidem nihil facilis earum, numquam sunt harum suscipit iure
+        molestias culpa perspiciatis iste exercitationem expedita, odio voluptatibus possimus ipsum, ex eius esse enim
+        optio id. Quidem hic, voluptatum voluptate non expedita mollitia iste dolore aperiam quasi beatae tempore
+        deleniti nostrum quisquam temporibus ducimus consequatur ipsam officia quis porro et dolores veniam dicta
+        dolorum molestias! Libero perspiciatis voluptate necessitatibus, incidunt reiciendis corporis quis at eos
+        accusantium nostrum enim praesentium fuga in, nam nisi adipisci dolor vero itaque optio possimus fugit,
+        perferendis omnis? Pariatur officiis dolor iste fuga, tempore quo illum vitae perferendis quasi mollitia nobis
+        libero accusantium magni aliquam eos cupiditate accusamus dolores consequatur culpa quidem! Autem fugiat rem
+        veniam, tempora impedit tempore reprehenderit commodi aut architecto delectus aliquam quia recusandae
+        doloremque? Aliquid, dolor, adipisci at reprehenderit nulla enim, veritatis ea dignissimos rem in voluptatem.
+        Quam, eveniet. Cum magni beatae commodi animi eligendi unde qui laborum porro repellat incidunt? Saepe animi
+        ipsa esse, error quisquam natus. Impedit nulla sequi id quo voluptatum unde recusandae tempora quaerat facilis,
+        incidunt magni modi. Reiciendis architecto illum ex asperiores reprehenderit ipsum laudantium consectetur nemo
+        vitae neque! Sapiente eligendi sint dignissimos saepe. Ipsam sit odio explicabo animi nostrum quidem vero
+        officia dolore perferendis! Impedit, nostrum sunt, est commodi et, at assumenda error illum consequuntur
+        voluptas omnis velit? Nesciunt quis nostrum ratione molestiae ad vero esse facilis dolorum soluta praesentium
+        aliquam sint odit totam ipsam, amet necessitatibus, inventore doloribus animi earum, architecto voluptatem eum
+        ullam aspernatur mollitia? Rem vitae beatae nihil molestiae, consequatur itaque sapiente, nulla enim quis iusto,
+        ad officiis ratione sunt libero? Nihil provident debitis, ex voluptas, vitae, sint inventore doloribus
+        asperiores ab aperiam sed recusandae ipsum vel saepe at explicabo omnis iusto laborum odio beatae! Laborum
+        soluta quo nam tempore commodi saepe cum doloremque eligendi optio suscipit maxime expedita quam, sunt eveniet
+        error voluptas assumenda delectus a repellat quia, earum atque. Cupiditate sint accusamus tempora explicabo quod
+        non adipisci cumque tempore. Possimus tenetur harum ut voluptatem soluta. Officiis autem quam obcaecati incidunt
+        rerum corrupti temporibus, tempora nisi, placeat aut delectus maxime et minima illo harum iure, cum blanditiis
+        hic exercitationem quia possimus eveniet consequuntur? Explicabo, expedita dicta accusantium fugiat quod vero
+        perferendis, ab consequatur quae dolores illo illum culpa perspiciatis eos quo architecto odio, placeat unde
+        ullam adipisci nisi libero repellat quidem cumque? Incidunt molestias illum amet similique atque iure deserunt,
+        odio esse sint harum, commodi, natus quidem eum quaerat tenetur nihil eveniet iusto maiores totam soluta quia
+        velit architecto nemo! Corrupti aspernatur blanditiis ratione, quis, id nihil a soluta ipsa vero autem expedita
+        voluptates ut consequuntur?
+    </p>
+</body>
+
+</html>

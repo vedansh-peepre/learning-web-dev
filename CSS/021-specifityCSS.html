@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade rules</title>
+
+    <style>
+        /* specificity = 1 */
+        h1 {
+            color: aqua;
+        }
+
+        /* specificity = 10 */
+        .cred {
+            color: red;
+            /* color: red !important; */
+        }
+
+        /* specificity = 10 */
+        .cpurple {
+            color: purple;
+        }
+
+        /* example of attribute selector */
+        /* specificity = 10 */
+        /* [data-x=a] {
+            color: green;
+        } */
+
+        /* specifity = 1 + 10 + 10 + 10 + 10 = 41 */
+        /* element + class + class + attribute + pseudo-class (hover) */
+        a.harryclass.rohanclass[href]:hover{
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="cyellow cred cpurple" data-x="a">This is an h1 element</h1>
+    <h1 style="color: blue;" class="cyellow cred cpurple">This is another h1 element</h1>
+
+    <dl>
+        <dt>1. position and order</dt>
+        <dd>which appears later wins</dd>
+        <dt>2. specificity</dt>
+        <dd>things are prioritized based on this rule (with scores of each): <br>Inline[1000] > ID[100] >
+            class/attribute[10] > element[1] > universal selector[0]</dd>
+        <dt>3. origin</dt>
+        <dd>whether the CSS is coming from the browser(user generated css) or developer</dd>
+        <dt>4. importance</dt>
+        <dd>the mention with an important mark
+            <pre>!important</pre> is prioritized
+        </dd>
+    </dl>
+
+</body>
+
+</html>

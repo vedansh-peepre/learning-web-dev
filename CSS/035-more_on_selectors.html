@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+            font-size: 20px;
+        }
+
+        .text{
+            margin: 10px;
+        }
+
+        /* "all" selecter */
+        .boxes * {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        /* dynamically adding elements with CSS
+        (pseudo elements) */
+        .boxes::before {
+            content: "Vedansh Peepre is Vedansh Peepre";
+            color: steelblue;
+        }
+
+        .boxes::after {
+            content: "I am Batman";
+            color: crimson;
+            font-weight: bold;
+        }
+
+        /* first line or letter properties */
+        .text::first-line {
+            color: lime;
+        }
+
+        .box::first-letter {
+            font-size: 44px;
+            color: chocolate;
+        }
+
+        /* multi selection */
+        /* a, p, .boxes{
+            font-weight: bold;
+        } */
+
+        /* more nth things */
+        /* .box:nth-child(odd){
+            background-color: purple;
+        } */
+
+        /* targets 2nd last */
+        /* .box:nth-last-child(2) {
+            color: yellow;
+        } */
+
+        /* for selection */
+        ::selection{
+            background-color: darkslategrey;
+            color: orange;
+        }
+
+        /* tweeking something inside of an inline defined thing */
+        input::placeholder{
+            color: fuchsia;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="boxes">
+        <div class="box">Hey im a box</div>
+        <div class="box">Im also a box</div>
+        <div class="box">Me bhi box hi hu yrr</div>
+    </div>
+
+    ------------------
+    
+    <div class="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquid suscipit voluptatum accusantium
+        reprehenderit adipisci! Aspernatur numquam quod est consequuntur cumque similique? Similique facilis reiciendis
+        dicta mollitia velit nobis odio. Veniam doloremque, ut consequuntur, reprehenderit voluptate dicta corrupti
+        molestiae animi incidunt laborum doloribus est fuga ipsa. Illo quas delectus praesentium ea beatae natus
+        possimus, culpa placeat sapiente consequatur accusamus molestias at velit eveniet rem asperiores molestiae modi
+        enim laudantium nostrum? Nulla soluta debitis quis illo voluptate quasi voluptas ad delectus fuga saepe. Quae
+        atque nulla eaque dolorem fugiat quis voluptatum officia ea, quisquam similique facere, architecto, esse magni
+        veniam.
+    </div>
+    
+    ------------------ <br>
+
+    <input type="text" placeholder="Fill me up iykyk">
+    <input type="button" value="submit">
+</body>
+
+</html>

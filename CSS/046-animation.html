@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+    <style>
+        .container{
+            background-color: hotpink;
+            width: 50vw;
+            height: 70vh;
+            font-size: 20px;
+        }
+
+        .box{
+            width: 55px;
+            height: 55px;
+            background-color: blue;
+            animation-name: myAnimation;
+            animation-duration: 2s;
+            animation-delay: 0.5s;
+            /* animation-iteration-count: infinite; */
+            animation-timing-function: ease-in-out;
+            /* animation-direction: alternate; */
+
+            /* turn off infinite iteration first */
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: backwards; */
+
+            /* animation-play-state: paused; -- not ideal, cuz done with JS */
+
+            /* shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myAnimation 2s ease-in 0.2s 4 alternate forwards;
+        }
+
+        @keyframes myAnimation {
+            from{
+
+            }
+            to{
+                transform: translate(500px);
+                background-color: yellow;
+            }
+        }
+
+        .box2{
+            width: 55px;
+            height: 55px;
+            background-color: cornflowerblue ;
+            animation: anime2 2s linear 0.5s infinite alternate forwards,
+                       myAnimation 3s ease-in-out 0.5s infinite reverse;
+            /* multiple animations via comma separated values */
+        }
+
+        @keyframes anime2 {
+            0%{
+                transform: rotate(10deg);
+            }
+            25%{
+                transform: rotate(100deg);
+            }
+            50%{
+                transform: rotate(190deg);
+            }
+            75%{
+                transform: rotate(250deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">box</div>
+        <div class="notes">
+            <p><b>Q. Why animation if transitions were there?</b>
+                <br>
+                A. Because animations give us a plethora of options and control over the motion
+            </p>
+        </div>
+        <div class="box2">box2</div>
+    </div>
+
+</body>
+</html>

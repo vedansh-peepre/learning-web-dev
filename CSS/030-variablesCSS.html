@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+
+    <style>
+        /* global variable defined */
+        :root {
+            --color: red;
+            --seccolor: coral;
+            --defpad: 20px; /* deafult padding parameter*/
+            --defop : 0.4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav ul li {
+            background-color: var(--color);
+            padding: 20px;
+        }
+
+        .nav ul li:first-child {
+            /* local variable used */
+            --color: skyblue;
+            background-color: var(--color);
+            opacity: var(--defop);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+            padding: var(--defpad);
+        }
+
+        .notes{
+            margin: var(--defpad);
+            padding: var(--defpad);
+            background-color: var(--tercolor, beige);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos non, rem possimus
+        maxime velit soluta facilis similique! Consequatur molestiae nesciunt neque dolores, sit accusamus, rem dolorum
+        temporibus voluptas quasi facere laboriosam consectetur eaque esse non aspernatur? Quibusdam aliquam animi ad
+        alias molestias quisquam itaque!</div>
+
+    <div class="notes"><caption>Notes:</caption>
+        <ol>
+            <li>variables used to store color values, size values, strings too maybe</li>
+            <li>they're defined in a <pre>root:{}</pre> entity</li>
+            <li>for local variables, they can be defined inside other entities and their name will be prioritized inside that entity (as in property decision)</li>
+            <li>we can set backup property for any variable is not present by writing them after comma "," inside <pre>var()</pre></li>
+        </ol>
+    </div>
+
+</body>
+
+</html>
